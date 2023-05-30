@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>JD</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <!-- <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li> -->
+                        </ul>
+                    </nav>
+
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="https://www.facebook.com/joaquin.damico.796/about"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/2614166622?text=Hola+Joaqu%C3%ADn%2C+quer%C3%ADa+saber+m%C3%A1s+informaci%C3%B3n+sobre+tu+trabajo+como+Desarrollador+Web."><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:joaquindamico7@gmail.com"><i class="fa-solid fa-envelope"></i></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2> Soy <span>Joaquin Damico</span>, Desarrollador Web</h2>
+                <p class="descripcion">Actualmente soy desarrollador Frontend utilizando HTML, CSS, JavaScrip. Tambien estoy estudiando para ser programador Full Stack</p>
+                <a href="#portfolio">Ir a Portfolio</a>
+            </div>
+        </div>
+    </section> 
+    
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="/img/fotoYo.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Joaquin Damico</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Mi nombre es Joaquin Damico tengo 19 años y soy desarrollador Web Frontend. Realice mi formacion en CoderHouse y de manera autodidacta en el año 2022 donde aprendi todo sobre el desarrollo web utilizando HTML, CSS y JavaScrip. Llevo 1 año estudiando y realizando proyectos de manera Freelance.</p>
+            <a href="/img/Curriculum viate D'Amico Joaquin (1).docx">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--SECCION SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>DISEÑO DE SITIOS WEB</h4>
+                <hr>
+                <ul class="servivios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p>Creare y diseñare una pagina Web funcional y completamente responsive utilizando HTML, CSS y JavaScript.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-handshake"></i></i></span>
+                <h4>ALOJAMIENTO DE SITIOS</h4>
+                <hr>
+                <ul class="servivios-tag">
+                    <li>Hosting</li>
+                </ul>
+                <p>Una vez finalizado el diseño del sitio web se le buscara un Hosting para que su pagina web tenga un dominio.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>POSICIONAMIENTO SEO</h4>
+                <hr>
+                <ul class="servivios-tag">
+                    <li>SEO</li>
+                </ul>
+                <p>Aplicare SEO a su pagina web para que logre posicionarse en los primeros resultados de las busquedas que se realizan en los distintos navegadores.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-gear"></i></span>
+                <h4>MANTENIMIENTO</h4>
+                <hr>
+                <ul class="servivios-tag">
+                    <li>Actualizaciones</li>
+                </ul>
+                <p>Una vez finalizada la pagina web estará la opcion de optar por un mantenimiento de la misma, esta consiste en agregar, quitar, cambiar elementos entre otras cosas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Css</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>React</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso4"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+    <seccion id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://joaquindamico.github.io/Coderhouse-Proyecto-Final-Joaquin-damico/"><img src="/img/Gym.jpeg" alt=""></a>
+                <div class="info">
+                    <h4>Gimnasio</h4>
+                    <p>Diseño Web de un Gimnasio utilizando HTML y CSS</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://joaquindamico.github.io/Coderhouse-JS-damico-Joaquin/"><img src="/img/Concesionario.jpeg" alt=""></a>
+                <div class="info">
+                    <h4>Concesionario</h4>
+                    <p>Diseño Web de un Concesionario de autos utilizando HTML, CSS y JavaScrip</p>
+                </div>
+            </div>
+
+        </div>
+    </seccion>
+
+    <!--SECCION CONTACTO-->
+    <!--<seccion id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </seccion> -->
+
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Mis redes sociales</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/joaquin.damico.796/about"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/2614166622?text=Hola+Joaqu%C3%ADn%2C+quer%C3%ADa+saber+m%C3%A1s+informaci%C3%B3n+sobre+tu+trabajo+como+Desarrollador+Web."><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:joaquindamico7@gmail.com"><i class="fa-solid fa-envelope"></i></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
